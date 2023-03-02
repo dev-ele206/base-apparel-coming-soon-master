@@ -1,4 +1,10 @@
+:root {
+    --bg-clr: hsl(0, 36%, 70%);
+}
 
+body {
+    color: var(--bg-clr);
+}
 
 * {
     margin: 0;
