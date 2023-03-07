@@ -69,6 +69,10 @@ input[type=email] {
     color: var(--red-clr);
   }
 
+::placeholder {
+    color: var(--red-clr);
+}
+
   .button {
     background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     border: none;
@@ -79,6 +83,24 @@ input[type=email] {
     position: absolute;
     left: 240px;
   }
+
+  .error-border {
+    border: 5px solid black;
+  }
+
+  .email-error {
+    position: absolute;
+    left: 210px;
+  }
+
+  .hidden {
+      visibility: hidden;
+  }
+
+  #error-icon {
+      position: absolute;
+  }
+
 
 
 
