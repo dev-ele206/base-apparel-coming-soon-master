@@ -5,13 +5,6 @@ const emailInput = document.querySelector('.email-box');
 const errorMessage = document.querySelector('.email-error-message');
 const errorIcon = document.querySelector('.email-error');
 
-// document.getElementById('test-btn').addEventListener("click", testBtn);
-
-// function testBtn() {
-//     container.classList.add('hidden')
-// }
-
-
 const setError = () => {
     emailInput.classList.add('error-border')
     errorMessage.classList.remove('hidden');

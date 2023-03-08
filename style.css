@@ -54,7 +54,7 @@ p {
     margin-top: 2.5rem;
 }
 
-form {
+#form-mobile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,9 +97,71 @@ input[type=email] {
       visibility: hidden;
   }
 
+  .container-desktop {
+      display: none;
+  }
+
   #error-icon {
       position: absolute;
   }
+
+  .email-error-message {
+      text-align: center;
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1000px) {
+    .container {
+        display: none;
+    }
+
+    .container-desktop {
+        display: flex;
+    }
+
+    .text-container-desktop {
+        margin-top: 5rem;
+        width: 50%;
+        height: 100vh;
+        padding-left: 10rem;
+    }
+
+    .text-container-desktop > p {
+        padding-right: 10rem;
+
+    }
+
+    .img-container-desktop {
+        width: 50%;
+        height: auto;
+        margin-left: 3.5rem;
+        
+    }
+    
+    .logo-desktop {
+        margin-bottom: 5rem;
+    }
+
+    #form-desktop {
+        display: flex;
+        margin-top: 2rem;
+    }
+    .button-desktop {
+        background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        border: none;
+        padding: 9px 20px;
+        text-decoration: none;
+        border-radius: 45%;
+        box-shadow: 0 5px 20px 3px hsl(0, 80%, 86%);
+        position: absolute;
+        left: 390px;
+      }
+
+
+
+
+
+}
 
 
 
